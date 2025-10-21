@@ -1,0 +1,140 @@
+=== public/index.html ===
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arsalan — SMIT Web Developer</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Arsalan — Web Developer (SMIT)</h1>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Hi — I'm Arsalan</h2>
+      <p>I'm a web developer student at SMIT. I build responsive websites and user-friendly web apps using HTML, CSS and JavaScript.</p>
+      <p><strong>Skills:</strong> HTML • CSS • JavaScript • Node.js • Express</p>
+    </section>
+
+    <section class="projects">
+      <h3>Featured Project</h3>
+      <article>
+        <h4>Portfolio Website</h4>
+        <p>A clean, responsive portfolio that shows projects, contact form, and blog links. Built with plain HTML/CSS and a Node.js backend to handle contact messages.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Arsalan — SMIT Student</p>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
+
+=== public/about.html ===
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Arsalan</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>About Me</h1>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Who I am</h2>
+      <p>I'm a student at SMIT learning web development. I enjoy building websites using HTML, CSS and JavaScript. I also experiment with backend development using Node.js and Express.</p>
+
+      <h3>Technologies I work with</h3>
+      <ul>
+        <li>HTML</li>
+        <li>CSS (responsive layouts, Flexbox, Grid)</li>
+        <li>JavaScript (vanilla JS, DOM manipulation)</li>
+        <li>Node.js & Express (simple APIs and contact handling)</li>
+      </ul>
+
+      <h3>Contact & Social</h3>
+      <p>You can use the contact page to send me a message. Add your GitHub, LinkedIn links here when available.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="yearAbout"></span> Arsalan</p>
+    </div>
+  </footer>
+  <script>document.getElementById('yearAbout').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+
+=== public/contact.html ===
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Arsalan</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Contact Me</h1>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <form id="contactForm">
+        <label>Name<br /><input type="text" name="name" required /></label>
+        <label>Email<br /><input type="email" name="email" required /></label>
+        <label>Message<br /><textarea name="message" rows="6" required></textarea></label>
+        <button type="submit">Send</button>
+      </form>
+
+      <div id="status"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="yearContact"></span> Arsalan</p>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+  <script>document.getElementById('yearContact').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+
